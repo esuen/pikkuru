@@ -25,5 +25,9 @@ yolov8n.pt
 yolov8n-pose.pt
 yolov8n-face-lindevs.pt
 
+# Scratch / local
+.envrc
+test.py
+
 # OS files
 .DS_Store

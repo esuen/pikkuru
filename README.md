@@ -36,15 +36,22 @@ source venv/bin/activate
 pip install ultralytics opencv-python numpy tqdm
 ```
 
-Place source video files in `videos/`.
-
 ## Usage
 
 ```bash
-python main.py
+python main.py path/to/game.mov
+python main.py path/to/game.mov -o highlights.mp4
+python main.py path/to/game.mov --confidence 0.4 --verbose
 ```
 
-Outputs `rallies_only.mp4` with extracted rally segments.
+Options:
+
+| Flag | Default | Description |
+|------|---------|-------------|
+| `-o, --output` | `rallies_only.mp4` | Output video path |
+| `--inference-size W H` | `480 270` | Downscaled resolution for inference |
+| `--confidence` | `0.3` | Ball detection confidence threshold |
+| `--verbose` | off | Print activity transition debug info |
 
 ## Training Data
 
