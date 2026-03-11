@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Large media files
+videos/
+frames/
+*.mp4
+*.mov
+
+# YOLO training runs (keep only best trained weights)
+runs/*
+!runs/detect/
+runs/detect/*
+!runs/detect/ball/
+runs/detect/ball/*
+!runs/detect/ball/weights/
+runs/detect/ball/weights/*
+!runs/detect/ball/weights/best.pt
+
+# Pre-trained base models (downloadable from ultralytics)
+yolov8n.pt
+yolov8n-pose.pt
+yolov8n-face-lindevs.pt
+
+# OS files
+.DS_Store

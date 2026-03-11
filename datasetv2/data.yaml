@@ -1,0 +1,13 @@
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 1
+names: ['ball']
+
+roboflow:
+  workspace: ball-ghj0j
+  project: ball-uqwhw
+  version: 6
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/ball-ghj0j/ball-uqwhw/dataset/6
